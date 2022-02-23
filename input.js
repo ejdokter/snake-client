@@ -1,24 +1,29 @@
 // setup interface to handle user input from stdin
-const { input } = require('./constants')
+const { input } = require('./constants');
 
 let connection;
 
-const setupInput = function (conn) {
-  connection = conn
+// setup interface to handle user input from stdin
+const setupInput = function(conn) {
+  connection = conn;
   const stdin = process.stdin;
   stdin.setRawMode(true);
   stdin.setEncoding("utf8");
   stdin.resume();
 
-  stdin.on('data', handleUserInput)
+  stdin.on('data', handleUserInput);
   return stdin;
 };
 
-const handleUserInput = function (key) {
+// processes the user input
+const handleUserInput = function(key) {
   if (key === '\u0003') {
-    process.exit()
+    process.exit(); // will exit with ctrl^c
   }
-  connection.write(input[key])
+  connection.write(input[key]); // takes input and checks it against object in constants.js
+  
+  // old implementation before I created the object
+  
   // if (key === 'w') {
   //   connection.write('Move: up')
   // }
@@ -37,6 +42,6 @@ const handleUserInput = function (key) {
   // if (key === 'z') {
   //   connection.write('Say: good game')
   // }
-}
+};
 
-module.exports = setupInput
+module.exports = setupInput;
