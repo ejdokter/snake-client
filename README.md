@@ -8,11 +8,13 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!["Control the snake using WASD"](![This is an image](screenshots\Screenshot 2022-02-26 084013.png))
-!["screenshot description"](#)
+![Control the snake using WASD](https://github.com/ejdokter/snake-client/blob/master/screenshots/Screenshot%202022-02-26%20084013.png?raw=true)
+
+![Send messages to other users](https://github.com/ejdokter/snake-client/blob/master/screenshots/Screenshot%202022-02-26%20084041.png?raw=true)
 
 
 ## Getting Started
 
 - Follow steps inside the snek server repo to run the server side
 - Run the development snake client using the `node play.js` command.
+- Press Ctrl+c to end the game
