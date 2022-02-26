@@ -8,9 +8,13 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-![Control the snake using WASD](https://github.com/ejdokter/snake-client/blob/master/screenshots/Screenshot%202022-02-26%20084013.png?raw=true)
+#### Control the snake using WASD
 
-![Send messages to other users](https://github.com/ejdokter/snake-client/blob/master/screenshots/Screenshot%202022-02-26%20084041.png?raw=true)
+![](https://github.com/ejdokter/snake-client/blob/master/screenshots/Screenshot%202022-02-26%20084013.png?raw=true)
+
+#### Send messages to other users
+
+![](https://github.com/ejdokter/snake-client/blob/master/screenshots/Screenshot%202022-02-26%20084041.png?raw=true)
 
 
 ## Getting Started
